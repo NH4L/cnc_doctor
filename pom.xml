@@ -26,8 +26,8 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <exclusions>
                 <exclusion>
-                   <groupId>org.springframework.boot</groupId>
-                   <artifactId>spring-boot-starter-tomcat</artifactId>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
                 </exclusion>
             </exclusions>
         </dependency>
@@ -49,14 +49,12 @@
 
     <build>
         <finalName>test</finalName>
-        <pluginManagement>
             <plugins>
-               <plugin>
-                  <groupId>org.springframework.boot</groupId>
-                  <artifactId>spring-boot-maven-plugin</artifactId>
-               </plugin>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
             </plugins>
-        </pluginManagement>
     </build>
 
 
@@ -65,65 +63,65 @@
         <!-- <repository> <id>nexus-repos</id> <name>Team Nexus Repository</name>
         <url>http://123.206.197.44:8081/nexus/content/groups/public</url> </repository> -->
         <repository>
-               <id>aliyun-repos</id>
-               <name>aliyun Repository</name>
-               <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <id>aliyun-repos</id>
+            <name>aliyun Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
         <repository>
-               <id>jeecg</id>
-               <name>jeecg Repository</name>
-               <url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
-               <snapshots>
-                  <enabled>false</enabled>
-               </snapshots>
+            <id>jeecg</id>
+            <name>jeecg Repository</name>
+            <url>http://maven.jeecg.org/nexus/content/repositories/jeecg</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
         </repository>
         <repository>
-               <id>jeecg-snapshots</id>
-               <name>jeecg-snapshots Repository</name>
-               <url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
-               <snapshots>
-                  <enabled>true</enabled>
-               </snapshots>
+            <id>jeecg-snapshots</id>
+            <name>jeecg-snapshots Repository</name>
+            <url>http://maven.jeecg.org/nexus/content/repositories/snapshots</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
         </repository>
         <repository>
-               <id>java-repos</id>
-               <name>Java Repository</name>
-               <url>http://download.java.net/maven/2/</url>
-        </repository>
-
-        <repository>
-               <id>springsource-repos</id>
-               <name>SpringSource Repository</name>
-               <url>http://repo.spring.io/release/</url>
+            <id>java-repos</id>
+            <name>Java Repository</name>
+            <url>http://download.java.net/maven/2/</url>
         </repository>
 
         <repository>
-               <id>central-repos</id>
-               <name>Central Repository</name>
-               <url>http://repo.maven.apache.org/maven2</url>
+            <id>springsource-repos</id>
+            <name>SpringSource Repository</name>
+            <url>http://repo.spring.io/release/</url>
         </repository>
 
         <repository>
-               <id>central-repos2</id>
-               <name>Central Repository 2</name>
-               <url>http://repo1.maven.org/maven2/</url>
+            <id>central-repos</id>
+            <name>Central Repository</name>
+            <url>http://repo.maven.apache.org/maven2</url>
         </repository>
 
         <repository>
-               <id>activiti-repos</id>
-               <name>Activiti Repository</name>
-               <url>https://maven.alfresco.com/nexus/content/groups/public</url>
+            <id>central-repos2</id>
+            <name>Central Repository 2</name>
+            <url>http://repo1.maven.org/maven2/</url>
         </repository>
 
         <repository>
-               <id>activiti-repos2</id>
-               <name>Activiti Repository 2</name>
-               <url>https://app.camunda.com/nexus/content/groups/public</url>
+            <id>activiti-repos</id>
+            <name>Activiti Repository</name>
+            <url>https://maven.alfresco.com/nexus/content/groups/public</url>
         </repository>
 
         <repository>
-               <id>spring-milestone</id>
-               <url>http://repo.spring.io/libs-release</url>
+            <id>activiti-repos2</id>
+            <name>Activiti Repository 2</name>
+            <url>https://app.camunda.com/nexus/content/groups/public</url>
+        </repository>
+
+        <repository>
+            <id>spring-milestone</id>
+            <url>http://repo.spring.io/libs-release</url>
         </repository>
     </repositories>
     <!-- 设定插件仓库 -->
@@ -132,9 +130,9 @@
         <!-- <pluginRepository> <id>nexus-repos</id> <name>Team Nexus Repository</name>
         <url>http://123.206.197.44:8081/nexus/content/groups/public</url> </pluginRepository> -->
         <pluginRepository>
-               <id>aliyun-repos</id>
-               <name>aliyun Repository</name>
-               <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <id>aliyun-repos</id>
+            <name>aliyun Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </pluginRepository>
     </pluginRepositories>
 
