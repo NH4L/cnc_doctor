@@ -2,7 +2,8 @@ package doctor.aysst.www.entitys;
 
 import java.io.Serializable;
 
-public class CNCProblem implements Serializable {
+
+public class CNCCrawl implements Serializable {
 
     private String id;
     private String brand;

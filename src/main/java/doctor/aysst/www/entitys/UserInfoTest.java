@@ -7,7 +7,7 @@ import java.io.Serializable;
 
 
 @Document(collection = "userInfo")
-public class UserInfo implements Serializable {
+public class UserInfoTest implements Serializable {
 
     @Id
     private Long id;
@@ -19,19 +19,19 @@ public class UserInfo implements Serializable {
     private String phone;
     private String signature;
     private String portraitAddr;
-    public UserInfo(){
+    public UserInfoTest(){
 
     }
-    public UserInfo(String username) {
+    public UserInfoTest(String username) {
         this.username = username;
     }
 
-    public UserInfo(String username, String password) {
+    public UserInfoTest(String username, String password) {
         this.username = username;
         this.password = password;
     }
 
-    public UserInfo(String username, String email, String password) {
+    public UserInfoTest(String username, String email, String password) {
         this.username = username;
         this.email = email;
         this.password = password;

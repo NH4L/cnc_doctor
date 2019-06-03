@@ -19,4 +19,20 @@ public class HelloController {
         return helloService.sayHello();
     }
 
+    @RequestMapping("/")
+    public String index(){
+        return "index";
+    }
+
+//    @RequestMapping("")
+//    public String index_1(){
+//        return "index";
+//    }
+
+    @RequestMapping("/404")
+    @ResponseBody
+    public String handleError(){
+        return "404";
+    }
+
 }

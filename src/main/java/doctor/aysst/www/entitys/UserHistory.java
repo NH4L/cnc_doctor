@@ -1,21 +1,38 @@
 package doctor.aysst.www.entitys;
 
+import com.sun.corba.se.spi.ior.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import java.io.Serializable;
 
-public class CNCProblem implements Serializable {
 
-    private String id;
+@Document(collection = "history")
+public class UserHistory implements Serializable {
+
+
+//    @Id
+//    private ObjectId _id;
+    private String username;
     private String brand;
     private String type;
     private String question;
     private String questype;
     private String solution;
+    private String time;
 
-    public void setId(String id) {
-        this.id = id;
+//    public void set_id(ObjectId _id) {
+//        this._id = _id;
+//    }
+//    public ObjectId get_id() {
+//        return _id;
+//    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
-    public String getId() {
-        return id;
+    public String getUsername() {
+        return username;
     }
 
     public void setBrand(String brand) {
@@ -51,5 +68,12 @@ public class CNCProblem implements Serializable {
     }
     public String getSolution() {
         return solution;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
+    public String getTime() {
+        return time;
     }
 }
